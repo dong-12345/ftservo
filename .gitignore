@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+sdkconfig
+sdkconfig.old
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,26 @@
+version: "1.0.0"
+description: "FEETECH (Futaba) 总线伺服电机控制库，支持 SCSCL、SMS_STS、HLS 系列舵机"
+url: "https://github.com/dong-12345/ftservo"
+
+license: "Apache-2.0"
+
+targets:
+  - esp32
+  - esp32s2
+  - esp32s3
+  - esp32c3
+  - esp32c5
+  - esp32c6
+  - esp32h2
+  - esp32p4
+
+tags:
+  - servo
+  - motor
+  - feetech
+  - robot
+  - actuator
+
+dependencies:
+  idf:
+    version: ">=6.0"
