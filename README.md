@@ -130,7 +130,7 @@ idf.py -p COMx flash monitor
 
 ## 依赖
 
-- ESP-IDF >= 5.0
+- ESP-IDF >= 6.0
 - 无需额外外部依赖
 
 ## 许可证
