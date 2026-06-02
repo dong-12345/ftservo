@@ -68,6 +68,13 @@ void ftUart_Send(uint8_t *nDat, int nLen);
 int ftUart_Read(uint8_t *nDat, int nLen);
 
 /**
+ * @brief 清空UART接收缓冲区
+ * 
+ * 丢弃接收缓冲区中的所有数据，用于半双工通信中清除发送回显
+ */
+void ftUart_FlushRx(void);
+
+/**
  * @brief 总线通信延时函数
  * 
  * 在总线通信中提供必要的延时，确保通信稳定性

@@ -62,7 +62,8 @@ int writeByteSCS(unsigned char bDat)
  */
 void rFlushSCS()
 {
-	ftBus_Delay();  // 调用硬件抽象层的延时函数
+	ftUart_FlushRx();
+	ftBus_Delay();
 }
 
 /**
@@ -73,7 +74,8 @@ void rFlushSCS()
 void wFlushSCS()
 {
 	if(wLen){
-		ftUart_Send(wBuf, wLen);  // 调用硬件抽象层的发送函数
-		wLen = 0;                 // 重置缓冲区长度
+		ftUart_Send(wBuf, wLen);
+		wLen = 0;
+		ftUart_FlushRx();
 	}
 }

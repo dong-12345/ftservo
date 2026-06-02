@@ -96,6 +96,11 @@ int ftUart_Read(uint8_t *nDat, int nLen)
     return len;
 }
 
+void ftUart_FlushRx(void)
+{
+    uart_flush_input(s_uart_num);
+}
+
 /**
  * @brief 总线通信延时函数
  * 
@@ -119,8 +124,10 @@ int ftServo_InitWithType(servo_type_t type, int tx_pin, int rx_pin, int rts_pin,
 
     switch (type) {
         case SERVO_SCSCL:
-        case SERVO_SMS_STS:
         case SERVO_HLS:
+            setEnd(1);
+            break;
+        case SERVO_SMS_STS:
         default:
             setEnd(0);
             break;
