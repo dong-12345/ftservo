@@ -1,4 +1,4 @@
-version: "1.0.1"
+version: "1.1.0"
 description: "FEETECH (Futaba) 总线伺服电机控制库，支持 SCSCL、SMS_STS、HLS 系列舵机"
 url: "https://github.com/dong-12345/ftservo"
 

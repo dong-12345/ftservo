@@ -3,6 +3,7 @@ build/
 sdkconfig
 sdkconfig.old
 dist/
+FTServo_stm32HAL-main/
 
 # IDE
 .idea/

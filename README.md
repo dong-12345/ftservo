@@ -1,4 +1,4 @@
-# ftservo -- FEETECH 总线舵机 ESP-IDF 组件
+# ftservo -- FEETECH 飞特总线舵机 ESP-IDF 组件
 
 [![Component Registry](https://components.espressif.com/components/dong-12345/ftservo/badge.svg)](https://components.espressif.com/components/dong-12345/ftservo)
 
